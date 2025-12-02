@@ -38,9 +38,33 @@ const Index = () => {
     },
     {
       id: 6,
-      url: "https://cdn.poehali.dev/files/2d93b9e7-3984-41bc-81e0-69c60b7cd7c7.JPG",
-      title: "Вечер",
+      url: "https://cdn.poehali.dev/files/147eda3a-d1b9-413c-a81f-e3fda5351305.JPG",
+      title: "История мужества",
       category: "Portrait"
+    },
+    {
+      id: 7,
+      url: "https://cdn.poehali.dev/files/f6d30502-8377-486a-9052-1c46bc77197f.JPG",
+      title: "Элегантность",
+      category: "Fashion"
+    },
+    {
+      id: 8,
+      url: "https://cdn.poehali.dev/files/8c684d10-e14c-487a-8811-9ca9ea44f023.JPG",
+      title: "Сезоны жизни",
+      category: "Portrait"
+    },
+    {
+      id: 9,
+      url: "https://cdn.poehali.dev/files/7b361cd6-c1e1-4221-8e38-e9630cd8a123.JPG",
+      title: "Гламур и стиль",
+      category: "Fashion"
+    },
+    {
+      id: 10,
+      url: "https://cdn.poehali.dev/files/a57ab8d5-c2f0-4387-9df3-407ace4ce9e9.JPG",
+      title: "Четыре образа",
+      category: "Creative"
     }
   ];
 
@@ -108,31 +132,31 @@ const Index = () => {
       </section>
 
       <section id="gallery" className="py-12 sm:py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-7xl">
           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-light text-center mb-8 sm:mb-12 lg:mb-16 animate-fade-in">
             Портфолио
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 sm:gap-6 lg:gap-8 space-y-4 sm:space-y-6 lg:space-y-8">
             {galleryImages.map((image, index) => (
               <div
                 key={image.id}
-                className="group relative overflow-hidden bg-gray-100 animate-fade-in"
+                className="group relative overflow-hidden bg-gray-100 break-inside-avoid animate-fade-in"
                 style={{
-                  animationDelay: `${index * 100}ms`,
-                  aspectRatio: "4/5"
+                  animationDelay: `${index * 100}ms`
                 }}
               >
                 <img
                   src={image.url}
                   alt={image.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    <p className="text-xs sm:text-sm font-light tracking-widest mb-1 sm:mb-2 text-primary">
+                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <p className="text-xs sm:text-sm font-light tracking-widest mb-1 text-primary">
                       {image.category}
                     </p>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-light">
+                    <h3 className="text-base sm:text-lg lg:text-xl font-light">
                       {image.title}
                     </h3>
                   </div>
