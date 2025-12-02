@@ -77,6 +77,12 @@ const Index = () => {
       url: "https://cdn.poehali.dev/files/56b66999-ef9d-4dff-8ac0-a5a63b3f12ba.JPG",
       title: "Профессионал",
       category: "Portrait"
+    },
+    {
+      id: 13,
+      url: "https://cdn.poehali.dev/files/9ed65423-3618-4959-8e6b-1db4cacd6d13.JPG",
+      title: "Креативный взгляд",
+      category: "Portrait"
     }
   ];
 
