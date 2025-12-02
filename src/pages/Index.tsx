@@ -8,39 +8,39 @@ const Index = () => {
   const galleryImages = [
     {
       id: 1,
-      url: "https://cdn.poehali.dev/projects/4f72ae0b-10cf-4778-9df8-fe44a98044a0/files/2373dd79-f7aa-4d05-b06d-1733fa870008.jpg",
-      title: "Architectural Elegance",
-      category: "Architecture"
+      url: "https://cdn.poehali.dev/files/2d93b9e7-3984-41bc-81e0-69c60b7cd7c7.JPG",
+      title: "Трансформация",
+      category: "Portrait"
     },
     {
       id: 2,
-      url: "https://cdn.poehali.dev/projects/4f72ae0b-10cf-4778-9df8-fe44a98044a0/files/7b4f4660-48a8-4dcc-b33d-90f09d4813b1.jpg",
-      title: "Portrait Series",
-      category: "Portrait"
+      url: "https://cdn.poehali.dev/files/9fa03b26-e212-4b05-9915-a9f19c4f5b91.JPG",
+      title: "Нежность",
+      category: "Family"
     },
     {
       id: 3,
-      url: "https://cdn.poehali.dev/projects/4f72ae0b-10cf-4778-9df8-fe44a98044a0/files/5ac7cbd7-bc82-49da-8769-11f6f746bc54.jpg",
-      title: "Golden Hour",
-      category: "Landscape"
-    },
-    {
-      id: 4,
-      url: "https://cdn.poehali.dev/projects/4f72ae0b-10cf-4778-9df8-fe44a98044a0/files/2373dd79-f7aa-4d05-b06d-1733fa870008.jpg",
-      title: "Urban Lines",
-      category: "Architecture"
-    },
-    {
-      id: 5,
-      url: "https://cdn.poehali.dev/projects/4f72ae0b-10cf-4778-9df8-fe44a98044a0/files/7b4f4660-48a8-4dcc-b33d-90f09d4813b1.jpg",
-      title: "Studio Light",
+      url: "https://cdn.poehali.dev/files/167549e4-47b2-4648-a60a-c4d22f11069e.JPG",
+      title: "Контраст",
       category: "Portrait"
     },
     {
+      id: 4,
+      url: "https://cdn.poehali.dev/files/9d1bc2fd-6303-4408-9268-5862ae177750.JPG",
+      title: "Стиль",
+      category: "Fashion"
+    },
+    {
+      id: 5,
+      url: "https://cdn.poehali.dev/files/fdcf9ff5-20d2-44ec-a2aa-a0e871c91606.JPG",
+      title: "Подводный мир",
+      category: "Creative"
+    },
+    {
       id: 6,
-      url: "https://cdn.poehali.dev/projects/4f72ae0b-10cf-4778-9df8-fe44a98044a0/files/5ac7cbd7-bc82-49da-8769-11f6f746bc54.jpg",
-      title: "Natural Beauty",
-      category: "Landscape"
+      url: "https://cdn.poehali.dev/files/2d93b9e7-3984-41bc-81e0-69c60b7cd7c7.JPG",
+      title: "Вечер",
+      category: "Portrait"
     }
   ];
 
@@ -84,7 +84,7 @@ const Index = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://cdn.poehali.dev/projects/4f72ae0b-10cf-4778-9df8-fe44a98044a0/files/2373dd79-f7aa-4d05-b06d-1733fa870008.jpg')`
+            backgroundImage: `url('https://cdn.poehali.dev/files/fdcf9ff5-20d2-44ec-a2aa-a0e871c91606.JPG')`
           }}
         >
           <div className="absolute inset-0 bg-black/40"></div>
@@ -181,7 +181,7 @@ const Index = () => {
             </div>
             <div className="order-1 lg:order-2">
               <img
-                src="https://cdn.poehali.dev/projects/4f72ae0b-10cf-4778-9df8-fe44a98044a0/files/7b4f4660-48a8-4dcc-b33d-90f09d4813b1.jpg"
+                src="https://cdn.poehali.dev/files/9d1bc2fd-6303-4408-9268-5862ae177750.JPG"
                 alt="Александр Иванов"
                 className="w-full rounded-lg shadow-2xl"
                 style={{ aspectRatio: "3/4" }}
